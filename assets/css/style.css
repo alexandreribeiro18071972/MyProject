@@ -1,2 +1,36 @@
-body {
-    font-family: 
+.content {
+    font-family: 'Lato', sans-serif;
+    block-size: 90%;
+    margin:auto;
+}
+
+.main-menu {
+    background: #e0e0e0;
+    display: flex;
+    position: absolute;
+    inline-size: 90%;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    padding: 0px;
+}
+
+#header {
+    display:inline-flex;
+    
+    position: relative;
+    flex-direction: row;
+    padding: 0px;
+    
+}
+
+#imgLogo {
+    margin-inline-end: 15px;
+    inline-size: 40px;
+    block-size: 36.84px;
+}
+
+#title-main h1{
+    font-size: 20px;
+    line-height: 24px;
+}
