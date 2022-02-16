@@ -17,7 +17,9 @@
     <div class="content" id="content">
         <!-- Cabeçalho -->
         <header class="main-menu" id="main-menu">
+            
             <ul class="header" id="header">
+            
                 <li class="imgLogo" id="imgLogo">
                     <img src="./assets/img/Ellipse13.png" />
                 </li>
@@ -28,12 +30,65 @@
                     <div class="menu-on" id="menu-on-cadastro">
                         <a href="#">Cadastro de Transações</a>
                     </div>
+                    <div class="barra" id="barra">
+                        |
+                    </div>
                     <div class="menu-on" id="menu-on-clear">
                         <a href="#">Limpar Dados</a>
                     </div>
                 </li>
+            
             </ul>
+        
         </header>
+        
+        <section class="body-page" id="body-page">
+        
+            <div class="body-page-content" id="body-page-content">
+        
+                <div class="transaction" id="transacion">
+        
+                    <p class="nova-transacao"> Nova Transação </p>
+        
+                    <form class="form-transacion" id="form-transacion" for="type-transaction">
+        
+                        <div class="type-transaction">
+                            <label name="type-transaction-select" id="type-transaction-select">Tipo de Transação:</label>
+                            <select class="type-transaction-option" id="type-transaction-option" required>
+                                <option value="compra">Compra</option>
+                                <option value="venda">Venda</option>
+                            </select>
+                        </div>
+        
+                        <div class="nome-mercadoria">
+                            <label for="nomeMercadoria">Nome da Mercadoria:</label>
+                            <input type="text" name="nomeMercadoria" required placeholder="Mercadoria">
+                        </div>
+
+                        <div class="valor-mercadoria">
+                            <label for="">Valor:</label>
+                            <input type="text" name="valorMercadoria" required placeholder="R$ 0,00" >
+                        </div>
+
+                        <div class="btn-transaction">
+                            <input class="btnSubmit" type="submit" value="Adicionar Transação">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="extrato" id="extrato">
+            <p> Extrato de Transações </p>
+        </section>
+
+    </div>
+    <div class="footer">
+        <footer>
+<p>
+    ** Direitos Reservados @Copyright **
+</p>
+        </footer>
     </div>
 </body>
 </html>    
