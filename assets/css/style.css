@@ -93,7 +93,6 @@ a:hover {
     padding: 30px;
 }
 .nova-transacao {
-    font-family: "Lato-regular, sans-serif";
     font-weight: 600;
     font-size: 20px;
     padding-block-end: 20px;
@@ -164,10 +163,18 @@ table {
     font-style: italic;
 }
 
+#ListTransacoesTotal {
+    border-block-start: 3px double;
+}
+
 footer {
     position: fixed;
     inset-block-end: 0;
     inline-size: 100%;
     block-size: 20px;
     background-color: #666666;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-align: center;
+    letter-spacing: 1px;
 }

@@ -41,11 +41,13 @@
             </ul>
             
         </header>
-        
+
+        <!-- Início do Corpo da Página-->
         <section class="body-page" id="body-page">
             
             <div class="body-page-content" id="body-page-content">
-                
+
+                <!--Inicio Nova Transação-->
                 <div class="transaction" id="transaction">
                     
                     <p class="nova-transacao"> Nova Transação </p>
@@ -59,7 +61,7 @@
                                 <option value="venda">Venda</option>
                             </select>
                         </div>
-
+                        
                         <div class="nome-mercadoria">
                             <label for="nomeMercadoria">Nome da Mercadoria:</label>
                             <input type="text" name="nomeMercadoria" required placeholder="Mercadoria">
@@ -67,7 +69,7 @@
                         
                         <div class="valor-mercadoria">
                             <label for="valorMercadoria">Valor:</label>
-                            <input type="text" name="valorMercadoria" required placeholder="R$ 0,00" >
+                            <input type="number" format="currency" name="valorMercadoria" required placeholder="R$ 0,00" >
                         </div>
                         
                         <div class="btn-transaction">
@@ -76,10 +78,12 @@
                         
                     </form>
                 </div>
+
+                <!--Inicio Extrato de Transações-->
                 <div class="extratoTransacoes" id="extratoTransacoes">
                     
                     <p class="extrato" id="extrato"> Extrato de Transações </p>
-
+                    
                     <table class="ListTransacoes" id="ListTransacoes">
                         <tbody>
                             <tr>
@@ -102,8 +106,13 @@
                                 <td>Mouse</td>
                                 <td class="valor">R$ 49,00</td>
                             </tr>
+                            
+                        </tbody>
+                    </table>
+                    <table class="LisTransacoes" id="ListTransacoesTotal">
+                        <tbody>
                             <tr>
-                                <th></th>
+                                <th>*</th>
                                 <th>Total</th>
                                 <th class="valor">R$ 4.523,00</th>
                             </tr>
@@ -112,17 +121,19 @@
                     <p class="lucro" id="lucro">
                         (Lucro)
                     </p><tr>
+                    </div>
                 </div>
-            </div>
-            
-            
-            
-        </section>
-    </div>
-    
-    <div class="footer">
-        <footer>
-        </footer>
-    </div>
-</body>
-</html>    
+ 
+            </section>
+        </div>
+        
+        <!--Rodapé-->
+        <div class="footer">
+            <footer>
+                <div class="Rodape">
+                    My Project (Projeto Individual) - Alexandre Ribeiro - Newtab Academy
+                </div>
+            </footer>
+        </div>
+    </body>
+    </html>    
