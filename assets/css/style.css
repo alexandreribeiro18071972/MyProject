@@ -121,6 +121,7 @@ input, select, .type-transaction-option {
     background: #666666;
     color: #FFFFFF;
     block-size: 30px;
+    cursor: pointer;
 }
 
 .extratoTransacoes {
