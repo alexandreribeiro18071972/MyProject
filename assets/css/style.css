@@ -1,21 +1,19 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'lato', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 .content {
     font-family: 'Lato', sans-serif;
-    margin:20px;
+    margin: 50px;
 }
 
 .header {
     display: flex;
-    inline-size: auto;
+    inline-size: 100%;
     block-size: 80px;
     background: #E0E0E0;
     align-items: center;
-    
-    
 }
 
 ul {
@@ -53,7 +51,6 @@ li.title-main {
     background: fixed;
     background-color: white;
     letter-spacing: 0.5px;
-    
 }
 
 #menu-on-clear {
@@ -72,7 +69,6 @@ a {
     text-decoration: none;
     color: #666666;
     text-align: unset;
-    
 }
 
 a:hover {
@@ -95,20 +91,20 @@ a:hover {
     border-radius: 2%;
     margin-block-start: 20px;
     padding: 30px;
-    
 }
 .nova-transacao {
+    font-family: "Lato-regular, sans-serif";
     font-weight: 600;
-    font-size: 18px;
+    font-size: 20px;
     padding-block-end: 20px;
     margin: auto;
-    
 }
 
 .form-transaction div label {
     display: flex;
     align-items: center;
     padding: 5px;
+    font-weight: bolder;
 }
 
 input, select, .type-transaction-option {
@@ -118,14 +114,14 @@ input, select, .type-transaction-option {
     font-weight: 400;
     block-size: 25px;
     margin-block-end: 20px;
-   
 }
 
 .btnSubmit {
     border:none;
     border-radius: 5px;
     background: #666666;
-    color: #FFFFFF
+    color: #FFFFFF;
+    block-size: 30px;
 }
 
 .extratoTransacoes {
@@ -139,14 +135,33 @@ input, select, .type-transaction-option {
 
 .extrato {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 20px;
     padding-block-end: 20px;
     align-self: center;
 }
 
-table, th, tr, td {
-    border-bottom: 1px solid;
+th {
+    text-align: start;
+}
+
+td {
+    border-block-start: 1px solid;
+    border-block-end: none;
     line-height: 30px;
+}
+
+.valor {
+    text-align: end;
+}
+
+table {
+    border-block-end: none;
+    line-height: 30px;
+}
+
+.lucro {
+    text-align: end;
+    font-style: italic;
 }
 
 footer {
