@@ -6,6 +6,8 @@
 .content {
     font-family: 'Lato', sans-serif;
     margin: 50px;
+    margin-block-start: 0;
+    
 }
 
 .header {
@@ -42,6 +44,10 @@ li.title-main {
     block-size: 36.84px;
     margin-inline-start: 20px;
     margin-inline-end: 30px;
+}
+
+#logoMobile {
+    display: none;
 }
 
 .menu-on {
@@ -179,3 +185,51 @@ footer {
     text-align: center;
     letter-spacing: 1px;
 }
+
+@media only screen and (max-width: 768px) {
+    #menu {
+        display: none;
+    }
+    #logoMobile {
+        display: revert;
+        position: relative;
+        
+    }
+    li.title-main {
+        font-weight: 600;
+        flex-grow: 2;
+        
+    }
+    .body-page-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+    }
+
+    .nova-transacao {
+        display: none;
+    }
+
+    .transaction {
+        inline-size: auto;
+        
+        
+    }
+    .extratoTransacoes {
+        inline-size: auto;
+        margin-block-start: 20px;
+        padding: 0px;
+    }
+    
+    input, select, .type-transaction-option {
+        flex: 1;
+        inline-size: 100%;
+        font-size: 14px;
+        font-weight: 400;
+        block-size: 25px;
+        margin-block-end: 0px;
+    }
+    .btnSubmit {
+        margin-block-start: 20px;
+        
+    }
