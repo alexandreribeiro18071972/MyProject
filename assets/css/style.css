@@ -5,7 +5,6 @@
 }
 .content {
     font-family: 'Lato', sans-serif;
-    margin: 50px;
     margin-block-start: 0;
     
 }
@@ -80,6 +79,10 @@ a {
 a:hover {
     background-color: #666666;
     color: #FFFFFF
+}
+
+.body-page {
+    margin: auto 20px;
 }
 
 .body-page-content {
@@ -175,15 +178,21 @@ table {
 }
 
 footer {
-    position: fixed;
+    display: flex;
+    justify-content: center;
+    position: absolute;
     inset-block-end: 0;
     inline-size: 100%;
     block-size: 20px;
     background-color: #666666;
-    font-size: 12px;
+    font-size: 9px;
     color: #FFFFFF;
     text-align: center;
     letter-spacing: 1px;
+}
+
+.Rodape {
+    margin: auto;
 }
 
 @media only screen and (max-width: 768px) {
@@ -197,12 +206,7 @@ footer {
     }
 
     #logoMobile img {
-        width: 30px;
-    }
-    li.title-main {
-        font-weight: 600;
-        flex-grow: 2;
-        
+        inline-size: 30px;
     }
     .body-page-content {
         display: flex;
@@ -213,7 +217,7 @@ footer {
     .transaction {
         inline-size: auto;
         padding: 0;
-        padding-top: 20px;
+        padding-block-start: 20px;
         /* block-size: 179px; */
         
     }
@@ -255,3 +259,40 @@ footer {
         margin-block-end: 0px;
         
     }
+}
+
+@media only screen and (max-width: 635px) {
+    .transaction {
+        display: flex;
+        flex-direction: column;
+        inline-size: 100%;
+        border: 1px solid;
+        border-radius: 2%;
+        padding: 0px;
+        margin-block-start: 20px;
+    }
+
+    .nova-transacao {
+        display: none;
+    }
+
+    .form-transaction {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+
+    }
+
+    .form-transaction div {
+        position: relative;
+        inline-size: 90%;
+        margin: 5px;
+        padding: 1px;
+    }
+
+    .btnSubmit {
+        max-inline-size: revert;
+    }
+ 
+}
