@@ -13,23 +13,21 @@
     <title>My Project - Controle Financeiro</title>
 </head>
 <body>
-    <nav class="menu-mobile" id="menu=mobile">
-        <div class="submenu-mobile-logo" id="logoFechar"> 
-            <img src="./assets/img/mobile-menu-fechar.svg" onclick="CloseEvent">
-            <!-- Alterar imagem para " X " --->
-        </div>
-        <div class="submenu-mobile-itens">  
-            Cadastro de Transações
-        </div>
-        <div class="submenu-mobile-itens"> 
-            Limpar Dados
-        </div>
-    </nav>
     <!-- Início do MyProject -->
     <div class="content" id="content">
         <!-- Cabeçalho -->
         <header class="main-menu" id="main-menu">
-            
+<!--             <nav class="menu-mobile" id="menu=mobile">
+                <div class="logoFechar" id="logoFechar"> 
+                    <img src="./assets/img/mobile-menu-fechar.svg" />
+                </div>
+                <div class="submenu-mobile-itens">  
+                    Cadastro de Transações
+                </div>
+                <div class="submenu-mobile-itens"> 
+                    Limpar Dados
+                </div>
+            </nav> -->
             <ul class="header" id="header">
                 
                 <li class="imgLogo" id="imgLogo">
@@ -50,10 +48,21 @@
                     </div>
                 </li>
                 <li class="logoMobile" id="logoMobile">
-                    <img src="./assets/img/mobile-menu.svg">
+                    <input type="checkbox" id="check" />
+                    <label id="icon-mobile" for="check"><img src="./assets/img/mobile-menu.svg"></label>
+                    <nav class="menu-mobile" id="menu=mobile">
+                        <div class="logoFechar" id="logoFechar"> 
+                            <img src="./assets/img/mobile-menu-fechar.svg" />
+                        </div>
+                        <div class="submenu-mobile-itens">  
+                            Cadastro de Transações
+                        </div>
+                        <div class="submenu-mobile-itens"> 
+                            Limpar Dados
+                        </div>
+                    </nav>
                 </li>
             </ul>
-            
             
         </header>
         
