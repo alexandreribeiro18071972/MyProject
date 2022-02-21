@@ -9,17 +9,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-    
     <title>My Project - Controle Financeiro</title>
 </head>
+
+<!-- Início do MyProject -->
 <body>
-    <!-- Início do MyProject -->
+    <!-- Inicio da Single Page -->
     <div class="content" id="content">
         <!-- Cabeçalho -->
         <header class="main-menu" id="main-menu">
-<!--             <nav class="menu-mobile" id="menu=mobile">
+            <!-- Menu oculto quando em tamanho menor que 768px. Menu aparece ao clicar no ícone Hamburguer -->
+            <input type="checkbox" id="check" />
+            <nav class="menu-mobile" id="menu=mobile">
                 <div class="logoFechar" id="logoFechar"> 
-                    <img src="./assets/img/mobile-menu-fechar.svg" />
+                    <label id="icon-close" for="check"><img src="./assets/img/mobile-menu-fechar.svg" for="check" /></label>
                 </div>
                 <div class="submenu-mobile-itens">  
                     Cadastro de Transações
@@ -27,7 +30,10 @@
                 <div class="submenu-mobile-itens"> 
                     Limpar Dados
                 </div>
-            </nav> -->
+            </nav>
+            <!-- Fim do Menu oculto -->
+            
+            <!-- Continuação do Cabeçalho -->
             <ul class="header" id="header">
                 
                 <li class="imgLogo" id="imgLogo">
@@ -48,30 +54,18 @@
                     </div>
                 </li>
                 <li class="logoMobile" id="logoMobile">
-                    <input type="checkbox" id="check" />
                     <label id="icon-mobile" for="check"><img src="./assets/img/mobile-menu.svg"></label>
-                    <nav class="menu-mobile" id="menu=mobile">
-                        <div class="logoFechar" id="logoFechar"> 
-                            <img src="./assets/img/mobile-menu-fechar.svg" />
-                        </div>
-                        <div class="submenu-mobile-itens">  
-                            Cadastro de Transações
-                        </div>
-                        <div class="submenu-mobile-itens"> 
-                            Limpar Dados
-                        </div>
-                    </nav>
                 </li>
             </ul>
-            
         </header>
+        <!-- Fim do Cabeçalho -->
         
-        <!-- Início do Corpo da Página-->
+        <!-- Início Corpo da Página -->
         <section class="body-page" id="body-page">
             
             <div class="body-page-content" id="body-page-content">
                 
-                <!--Inicio Nova Transação-->
+                <!-- Inicio Nova Transação -->
                 <div class="transaction" id="transaction">
                     
                     <p class="nova-transacao"> Nova Transação </p>
@@ -102,8 +96,9 @@
                         
                     </form>
                 </div>
+                <!-- Fim Nova Transação -->
                 
-                <!--Inicio Extrato de Transações-->
+                <!-- Inicio Extrato de Transações -->
                 <div class="extratoTransacoes" id="extratoTransacoes">
                     
                     <p class="extrato" id="extrato"> Extrato de Transações </p>
@@ -146,19 +141,24 @@
                         (Lucro)
                     </p>
                 </div>
+                <!-- Fim Extrato de Transações -->
             </div>
-            
         </section>
+        <!-- Fim Corpo da Página -->
+        
+        <!-- Início do Rodapé -->
+        <div class="footer">
+            <footer>
+                <div class="Rodape">
+                    My Project (Projeto Individual) - Alexandre Ribeiro - Newtab Academy
+                </div>
+            </footer>
+        </div>
+        <!-- Fim do Rodapé -->
+
     </div>
+    <!-- Fim da Single Page-->
     
-    <!--Rodapé-->
-    <div class="footer">
-        <footer>
-            <div class="Rodape">
-                My Project (Projeto Individual) - Alexandre Ribeiro - Newtab Academy
-            </div>
-        </footer>
-    </div>
-</div>
 </body>
+
 </html>    
