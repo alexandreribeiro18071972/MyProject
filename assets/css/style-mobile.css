@@ -1,0 +1,110 @@
+@media only screen and (max-width: 768px) {
+   
+    #menu {
+        display: none;
+    }
+    #logoMobile {
+        display: revert;
+    }
+
+    .logoFechar {
+        height: 30px;
+        margin: 10px;
+    }
+
+    #icon-mobile, #icon-close {
+        cursor: pointer;
+    }
+
+    #icon-close img {
+        height: 35px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        width: 300px;
+        left: 100%;
+        background: black;
+        z-index: 1;
+        transition: all .6s linear
+    }
+
+    #check:checked ~ nav {
+        transform: translateX(-100%);
+        
+    }
+    
+    .submenu-mobile-itens {
+        padding: 12px;
+        color: #FFFFFF;
+        text-align: end;
+    }
+    
+    .submenu-mobile-itens:hover {
+        background-color: white;
+        color: #666666;
+        cursor: pointer;
+    }
+    
+    .body-page-content {
+        flex-direction: column;
+    }
+    
+    .transaction {
+        inline-size: auto;
+        padding: 0;
+        padding-block-start: 20px;
+    }
+    
+    .form-transaction {
+        display: flex;
+        inline-size: auto;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        align-items: center;
+        padding-inline-end: 10px;
+        padding-inline-start: 10px;
+        
+    }
+    
+    .form-transaction div {
+        inline-size: 31%;
+        margin: 5px;
+        padding: 1px;
+    }
+
+    input, select {
+        margin-block-end: 0px;
+    }
+
+    .extratoTransacoes {
+        inline-size: auto;
+        padding: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 635px) {
+    .transaction {
+        padding-block-start: 0px;
+    }
+
+    .nova-transacao {
+        display: none;
+    }
+
+    .form-transaction {
+        justify-content: center;
+        flex-direction: column;
+        padding-block-start: 0;
+
+    }
+
+    .form-transaction div {
+        inline-size: 90%;
+    }
+ 
+}
