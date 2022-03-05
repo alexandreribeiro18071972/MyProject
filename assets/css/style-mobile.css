@@ -70,8 +70,20 @@
         
     }
     
-    .form-transaction div {
-        inline-size: 31%;
+    .form-transaction .type-transaction, .form-transaction .valor-mercadoria {
+        inline-size: 20%;
+        margin: 5px;
+        padding: 1px;
+    }
+
+    .form-transaction .nome-mercadoria {
+        inline-size: calc(55% - 6px);
+        margin: 5px;
+        padding: 1px;
+    }
+
+    .form-transaction .btn-transaction {
+        inline-size: 200px;
         margin: 5px;
         padding: 1px;
     }
@@ -87,9 +99,10 @@
 
 }
 
-@media only screen and (max-width: 635px) {
+@media only screen and (max-width: 742px) {
     .transaction {
         padding-block-start: 0px;
+        padding-block-end: 15px;
     }
 
     .nova-transacao {
@@ -103,8 +116,9 @@
 
     }
 
-    .form-transaction div {
-        inline-size: 90%;
+    .form-transaction .type-transaction, .form-transaction .nome-mercadoria,
+    .form-transaction .valor-mercadoria, .form-transaction .btn-transaction{
+        inline-size: 95%;
     }
  
 }
